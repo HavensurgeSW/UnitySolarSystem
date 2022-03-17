@@ -14,6 +14,6 @@ public class EarthRotate : MonoBehaviour
         transform.Rotate(0,-0.1f,0);
 
         //Orbit
-        transform.RotateAround(sun.transform.position, new Vector3(0,-1,0), 6*Time.deltaTime);
+        transform.RotateAround(sun.transform.position, new Vector3(0,-1,0), speed*Time.deltaTime*2);
     }
 }
