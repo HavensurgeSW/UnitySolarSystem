@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637831170646948824
+      ticks: 637831211737404339
     m_Hash: 4133162370
   m_LockFileStatus:
     m_FilePath: C:/Users/Administrador/Desktop/UnitySolarSystem/HSS-DVJ2-Framework/HSS-DVJ2-Framework/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637831170652071145
+      ticks: 637831211742730031
     m_Hash: 342199913
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
