@@ -8,6 +8,7 @@ public class CamMovement : MonoBehaviour
     public GameObject cam;
     public float speed = 10;
     public Vector2 motion;
+    public Vector3 zoom;
     public bool planetLock = false;
     private Vector3 OGPos;
  // PlanetLock
@@ -19,10 +20,11 @@ public class CamMovement : MonoBehaviour
     {
         _camOffset = transform.position - planetTransform.position;
         OGPos = transform.position;
+        zoom = new Vector3(0, 0, 0.5f);
     }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1)){
+        if(Input.GetKeyDown(KeyCode.Alpha3)){
             if(!planetLock){
                 planetLock = true;
             }else{
@@ -37,6 +39,16 @@ public class CamMovement : MonoBehaviour
         }else{
             motion = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
             cam.transform.Translate(motion * speed * Time.deltaTime);
+        }
+
+        if(Input.GetKey(KeyCode.Q))
+        {
+            cam.transform.Translate(zoom * speed * Time.deltaTime);
+        }
+
+        if(Input.GetKey(KeyCode.E))
+        {
+            cam.transform.Translate(-zoom * speed * Time.deltaTime);
         }
 
 
